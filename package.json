@@ -1,7 +1,7 @@
 {
-  "name": "react-template",
+  "name": "styleagnostic-bare-input",
   "version": "1.0.0",
-  "description": "Preconfigured react template compatible with style agnostic components approach.",
+  "description": "Simplest input component mainly used in other more complex components.",
   "main": "index.tsx",
   "scripts": {
     "demo": "webpack serve -c ./webpack.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omatviiv/react-template.git"
+    "url": "git+https://github.com/omatviiv/styleagnostic-bare-input.git"
   },
   "author": "Oleh Matviiv",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/omatviiv/react-template/issues"
+    "url": "https://github.com/omatviiv/styleagnostic-bare-input/issues"
   },
-  "homepage": "https://github.com/omatviiv/react-template#readme",
+  "homepage": "https://github.com/omatviiv/styleagnostic-bare-input#readme",
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",
     "@types/jest": "^29.2.6",
