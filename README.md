@@ -9,50 +9,50 @@ simple input component is required.
 It provides debounce functionality for text based input types.
 
 # Supported input types
-- <input type="text">
-- <input type="email">
-- <input type="number">
-- <input type="password">
-- <input type="search">
-- <input type="tel">
-- <input type="url">
+- `<input type="text">`
+- `<input type="email">`
+- `<input type="number">`
+- `<input type="password">`
+- `<input type="search">`
+- `<input type="tel">`
+- `<input type="url">`
 
 The rest of input types are not supported in this component:
-- <input type="checkbox"> not supported because debouncing makes no sence
+- `<input type="checkbox">` not supported because debouncing makes no sence
 when we deal with just boolean value and the checkbox itself is very
-simple component which doesn't require style separation i.e. it is
+simple component which doesn`t require style separation i.e. it is
 absolutely enough to keep checkbox as simply member of the theme.
 
-- <input type="color"> not supported because debounce will not make sence
+- `<input type="color">` not supported because debounce will not make sence
 for color picker and most probably throttling will be better option so
 there should be a separate component for this kind of input if needed.
 
-- <input type="file"> not supported since it doesn't require debounce
+- `<input type="file">` not supported since it doesn`t require debounce
 and there is no text input in this case so most probably just simple
 component in the theme would work.
 
-- <input type="button"> not supported because it can be completely replaced
+- `<input type="button">` not supported because it can be completely replaced
 with <button> html element which has wider functionality.
 This type of input is maily for legacy.
 
-- <input type="radio"> not supported because debouncing makes no sence
+- `<input type="radio">` not supported because debouncing makes no sence
 when we deal with radio value and the redio itself is very simple component
-which doesn't require style separation i.e. it is absolutely enough to
+which doesn`t require style separation i.e. it is absolutely enough to
 keep checkbox as simply member of the theme.
 
-- <input type="range"> not supported because it doesn't have texual
+- `<input type="range">` not supported because it doesn`t have texual
 input to be debounced and this is enough to store this component as part
 of the theme.
 
-- <input type="date"> and <input type="datetime-local"> and
-<input type="month"> and <input type="time"> and <input type="week"> are
+- `<input type="date">` and `<input type="datetime-local">` and
+`<input type="month">` and `<input type="time">` and `<input type="week">` are
 not supported because the UX of the standard html data input purely depends
 on specific browser implementation and will differ along the browsers quite
 dramatically and there is no easy way changin that style and make it
 consistant across the browsers there should be separate style agnostic
 component to handle date/time user input.
 
-- <input type="hidden"> not supported since it doesn't need debounce
+- `<input type="hidden">` not supported since it doesn`t need debounce
 this kind of input is used to pass some data to the server without
 interactin with user and while there are number of other ways to do
 this with modern web development but there still are some valid use
@@ -60,17 +60,17 @@ cases but anyway just component in a theme would work because seems
 there is not potential for reusable logic here to separate from
 the style.
 
-- <input type="image"> not supported because input type image which is
+- `<input type="image">` not supported because input type image which is
 basically a submit button in a form of image can be replaced with more
-flexible <button> with <img> inside. Even if we still for some reason
+flexible `<button>` with `<img>` inside. Even if we still for some reason
 need input type image this is not valid component for debounce since
 there is no text user input involved
 
-- <input type="reset"> not supported and can be replaced with
-<button type="reset">
+- `<input type="reset">` not supported and can be replaced with
+`<button type="reset">`
 
-- <input type="submit"> not supported and can be replaced with
-<button type="submit">
+- `<input type="submit">` not supported and can be replaced with
+`<button type="submit">`
 
 # Style agnostic component approach
 Component is implemented in a way that in its JSX structure all tags and styles
