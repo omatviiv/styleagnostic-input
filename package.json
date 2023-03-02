@@ -1,6 +1,6 @@
 {
-  "name": "styleagnostic-bare-input",
-  "version": "1.0.0",
+  "name": "styleagnostic-input",
+  "version": "0.0.1",
   "description": "Simplest input component mainly used in other more complex components.",
   "main": "index.tsx",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omatviiv/styleagnostic-bare-input.git"
+    "url": "git+https://github.com/omatviiv/styleagnostic-input.git"
   },
   "author": "Oleh Matviiv",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/omatviiv/styleagnostic-bare-input/issues"
+    "url": "https://github.com/omatviiv/styleagnostic-input/issues"
   },
-  "homepage": "https://github.com/omatviiv/styleagnostic-bare-input#readme",
+  "homepage": "https://github.com/omatviiv/styleagnostic-input#readme",
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",
     "@types/jest": "^29.2.6",
