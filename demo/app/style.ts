@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: Courier New;
     margin: 0;
-    background: ${whiteb(0.6)};
+    background: ${whiteb(0.3)};
     color: ${blackb()};
   }
 `;
