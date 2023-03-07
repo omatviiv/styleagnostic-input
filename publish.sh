@@ -11,7 +11,7 @@ echo ".eslintrc.js" >> .npmignore
 echo "jest.config.js" >> .npmignore
 echo "webpack.js" >> .npmignore
 echo "tsconfig.json" >> .npmignore
-echo "demo/*" >> .npmignore
+echo "demo" >> .npmignore
 
 echo "== npm publish"
 npm publish
