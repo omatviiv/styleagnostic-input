@@ -13,7 +13,7 @@ echo "webpack.js" >> .npmignore
 echo "tsconfig.json" >> .npmignore
 echo "demo/*" >> .npmignore
 
-echo "== publish"
+echo "== npm publish"
 npm publish
 
 # -- 2 publish demo version --

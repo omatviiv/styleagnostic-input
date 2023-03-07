@@ -9,7 +9,7 @@
     "lint": "eslint ./demo",
     "test": "jest",
     "jest": "jest --watch",
-    "publish": ". ./publish.sh"
+    "publish-all": ". ./publish.sh"
   },
   "repository": {
     "type": "git",
