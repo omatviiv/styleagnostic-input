@@ -12,4 +12,4 @@ echo "!demo/index.tsx" >> .npmignore
 echo "!demo/style.ts" >> .npmignore
 
 # VERSION:1 removes first character which position is 0
-npm dist-tag add styleagnostic-input@$VERSION:1 demo
+npm dist-tag add "styleagnostic-input@${VERSION:1}" demo
