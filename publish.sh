@@ -11,5 +11,5 @@ VERSION=$((npm version patch) 2>&1)
 echo "!demo/index.tsx" >> .npmignore
 echo "!demo/style.ts" >> .npmignore
 
-# VERSION:1 removes first character which position is 0
-npm dist-tag add "styleagnostic-input@${VERSION:1}" demo
+PACKAGE_AND_VERSION="styleagnostic-input@${VERSION:1}"
+npm dist-tag add $PACKAGE_AND_VERSION demo
