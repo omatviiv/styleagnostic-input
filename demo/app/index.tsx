@@ -1,13 +1,12 @@
 import React from 'react';
-import Input from '../../';
+import DefaultDemo from '../';
 import {
-  GlobalStyle, Header, Container, InputContainer,
+  GlobalStyle, Container,
 } from './style';
 
 const Application: React.FC = () => <Container>
   <GlobalStyle/>
-  <Header>Input component demo</Header>
-  Input text here: <InputContainer><Input/></InputContainer>
+  <DefaultDemo/>
 </Container>;
 
 export default Application;

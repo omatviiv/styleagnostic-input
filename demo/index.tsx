@@ -1,7 +1,12 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client';
-import Application from './app';
+import Input from '../';
+import {
+  Header, InputContainer,
+} from './style';
 
-const ApplicationContainer = document.getElementById('application-container');
+const DefaultDemo: React.FC = () => <>
+  <Header>Input component demo</Header>
+  Input text here: <InputContainer><Input/></InputContainer>
+</>;
 
-createRoot(ApplicationContainer).render(<Application />);
+export default DefaultDemo;
