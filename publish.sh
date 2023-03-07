@@ -12,5 +12,5 @@ echo "!demo/index.tsx" >> .npmignore
 echo "!demo/style.ts" >> .npmignore
 
 packageName="styleagnostic-input"
-echo "-------- $packageName@$version:1"
-npm dist-tag add "$packageName@$version:1" demo
+echo "-------- $packageName@${version:1}"
+npm dist-tag add "$packageName@${version:1}" demo
