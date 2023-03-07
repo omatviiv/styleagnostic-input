@@ -8,7 +8,8 @@
     "demo:build": "webpack -c ./webpack.js",
     "lint": "eslint ./demo",
     "test": "jest",
-    "jest": "jest --watch"
+    "jest": "jest --watch",
+    "publish": ". ./publish.sh"
   },
   "repository": {
     "type": "git",
