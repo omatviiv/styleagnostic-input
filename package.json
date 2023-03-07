@@ -1,6 +1,6 @@
 {
   "name": "styleagnostic-input",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simplest input component mainly used in other more complex components.",
   "main": "index.tsx",
   "scripts": {
