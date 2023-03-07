@@ -11,6 +11,6 @@ version=$((npm version patch) 2>&1)
 echo "!demo/index.tsx" >> .npmignore
 echo "!demo/style.ts" >> .npmignore
 
+npm publish
 packageName="styleagnostic-input"
-echo "-------- $packageName@${version:1}"
 npm dist-tag add "$packageName@${version:1}" demo
