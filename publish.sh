@@ -4,7 +4,9 @@ npm publish
 
 # -- 2 publish demo version --
 echo "== increment patch version in package.json"
-npm version patch
+VERSION=""
+npm version patch >> VERSION
+echo "=========== VERSION = ${$VERSION}"
 
 # demo .npmignore
 echo "!demo/index.tsx" >> .npmignore
