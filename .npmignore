@@ -4,4 +4,4 @@ node_modules
 jest.config.js
 webpack.js
 tsconfig.json
-demo
+demo/*
