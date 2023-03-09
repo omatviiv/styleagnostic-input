@@ -1,3 +1,6 @@
+# tell bash to abort script on first error
+set -e
+
 # -- 1 publish latest (default - latest npm tag) version --
 echo "== npm publish"
 npm publish
