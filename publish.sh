@@ -16,3 +16,5 @@ echo "!demo/style.ts" >> .npmignore
 # npm dist-tag add "$packageName@${version:1}" demo
 # but easier way is to simply use --tag option of the npm publish:
 npm publish --tag demo
+
+git reset --hard
