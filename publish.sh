@@ -8,7 +8,7 @@ echo "== increment patch version in package.json"
 version=$((npm version patch) 2>&1)
 packageName="styleagnostic-input"
 
-# demo .npmignore
+# whitelist some files in demo/
 echo "!demo/index.tsx" >> .npmignore
 echo "!demo/style.ts" >> .npmignore
 
@@ -17,4 +17,5 @@ echo "!demo/style.ts" >> .npmignore
 # but easier way is to simply use --tag option of the npm publish:
 npm publish --tag demo
 
+# now revert demo files whitelisting
 git reset --hard
