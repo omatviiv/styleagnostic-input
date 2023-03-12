@@ -13,7 +13,7 @@ __break__ - change that breaks backward compatibility
 # setup project tasks
 Tasks in this section are all __fix__ project is in setup process.
 
-- add ability to write code examples
+- add react-syntax-highlighter
 - add input component version in the main header of the public demo
 - add cypress and write first test
 
