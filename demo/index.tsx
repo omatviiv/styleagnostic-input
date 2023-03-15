@@ -4,9 +4,9 @@ import {
   Header, InputContainer,
 } from './style';
 
-const DefaultDemo: React.FC = () => <>
+const DefaultInputDemo: React.FC = () => <>
   <Header>Input component demo</Header>
   Input text here: <InputContainer><Input/></InputContainer>
 </>;
 
-export default DefaultDemo;
+export default DefaultInputDemo;
