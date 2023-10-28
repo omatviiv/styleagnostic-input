@@ -98,7 +98,7 @@ development and testing. And the demo project is very similar to
 Except that its buildable src/ is demo/ and stores not the component itself
 but demo pages for the component.
 
-## Build setup notes for compponent demo
+## Build setup notes for component demo
 `demo/` contains component demo application for developer convenience
 of component development and testing.
 
