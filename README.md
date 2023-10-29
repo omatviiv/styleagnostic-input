@@ -5,6 +5,25 @@ for the filter itself, phone input component etc.
 But ofcouse this component can be used directly in the web application if
 simple input component is required.
 
+# Use
+1. `npm install styleagnostic-input`
+2. Import and use in JSX:
+```
+import React from 'react';
+import Input from 'styleagnostic-input';
+
+const App = () => <>
+  <Input/> // with default values to all props
+  <Input type='email'/> // see [below](supported-input-types) for types list
+  <Input value='some text'/> // value can be used in controlled manner
+                             // (changed dynamically from the parent component)
+  <Input placeholder='Start typing here'/>
+  <Input debounceTimeout='400'/> // change default debounce timeout (300) in ms
+  <Input onChange={(v) => { console.log(v); }}/>
+  <Input theme={BeautifulTheme}/> // see [styleagnostic approach](style-agnostic-component-approach) for more info
+</>;
+```
+
 # Why this component exists
 It provides debounce functionality for text based input types.
 
@@ -81,7 +100,7 @@ represent a specific node in the JSX structure of the component.
 
 Thus when following the rule above we are achieving complete style separation
 from the component structure and logic. And taking this into account there is
-one more important rule for styleagnostic components: 
+one more important rule for styleagnostic components:
 - if component doesn't have any logic to be separated from the styling then
 such component doesn't deserve a separate repo and can be simply part of the
 theme.

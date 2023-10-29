@@ -1,5 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
+// TODO: colors must go to theme-service
 export const white = (o?: number): string => !o
   ? '#AFA882' : `rgba(175, 168, 130, ${ o })`;
 export const cyan = (o?: number): string => !o
@@ -48,6 +49,7 @@ export const Container = styled.div`
   padding: 1rem;
 `;
 
+// TODO: move Header to theme-service
 export const Header = styled.h1``;
 
 export const InputContainer = styled.span`
