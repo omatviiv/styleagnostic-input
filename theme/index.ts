@@ -1,7 +1,7 @@
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 
 export type InputThemeType = {
-  Input: StyledComponent<'input', object, object>,
+  Input: React.ElementType,
 };
 
 const InputTheme: InputThemeType = {
