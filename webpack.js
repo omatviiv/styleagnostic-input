@@ -10,6 +10,9 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        // react-template uses babel-loader because more advances config
+        // is needed, here this is only demo app which is only for local
+        // development so ts-loader should be fine
         use: 'ts-loader',
         exclude: /node_modules/,
       },

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// THIS IS PUBLICK DEMO
+// THIS IS PUBLIC DEMO
 // DON'T IMPORT ANYTHING from demo except demo/style.ts or component from ../
 // DON'T USE IMPORT ALIASES
 import Input from '../';

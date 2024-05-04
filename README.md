@@ -27,7 +27,7 @@ const App = () => <>
 # Why this component exists
 It provides debounce functionality for text based input types.
 
-# Supported input types
+## Supported input types
 - `<input type="text">`
 - `<input type="email">`
 - `<input type="number">`
