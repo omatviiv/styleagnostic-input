@@ -1,6 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const path = require('path');
+const createStyledComponentsTransformer = require(
+  'typescript-plugin-styled-components',
+).default;
+
+const styledComponentsTransformer = createStyledComponentsTransformer();
 
 module.exports = {
   mode: 'development',
@@ -13,8 +18,13 @@ module.exports = {
         // react-template uses babel-loader because more advances config
         // is needed, here this is only demo app which is only for local
         // development so ts-loader should be fine
-        use: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
+        options: {
+          getCustomTransformers: () => ({
+            before: [styledComponentsTransformer],
+          })
+        },
       },
       {
         test: /\.svg$/i,
