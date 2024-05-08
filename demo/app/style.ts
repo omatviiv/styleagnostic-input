@@ -1,12 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components';
-
-import {bodyCss} from 'demo/theme-service';
-
-export const GlobalStyle = createGlobalStyle`
-  body {
-    ${bodyCss}
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 1rem;

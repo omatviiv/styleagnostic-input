@@ -18,6 +18,8 @@ export const black = (o?: number): string => !o
 // b in the end of the color name stands for Bright
 export const whiteb = (o?: number): string => !o
   ? '#FDF4C1' : `rgba(254, 244, 193, ${ o })`;
+export const verywhite = (o?: number): string => !o
+  ? '#FEFBED' : `rgba(254, 251, 237, ${ o })`;
 export const cyanb = (o?: number): string => !o
   ? '#847545' : `rgba(132, 117, 69, ${ o })`;
 export const magentab = (o?: number): string => !o
