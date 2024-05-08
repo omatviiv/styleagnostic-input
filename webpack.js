@@ -43,6 +43,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
       demo: path.resolve(__dirname, './demo/'),
+      svg: path.resolve(__dirname, './svg/'),
     },
   },
   output: {
