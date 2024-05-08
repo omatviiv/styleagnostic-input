@@ -20,7 +20,7 @@ const MainMenu: React.FC<MainMenuProps> = ({
 
   const onMenuClick = () => setOpened(!opened);
 
-  return createPortal(<MainMenuContainer>
+  return createPortal(<MainMenuContainer opened={opened}>
     <MenuHeader
       onClick={onMenuClick}
     >

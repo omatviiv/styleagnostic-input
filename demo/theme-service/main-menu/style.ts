@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import {verywhite, blueb, blue, cyan, yellowb} from '../color';
 import {media} from '../';
 
-export const MainMenuContainer = styled.div`
+type MainMenuContainerProps = {
+  opened: boolean;
+};
+export const MainMenuContainer = styled.div<MainMenuContainerProps>`
   display: flex;
   position: absolute;
   right: 0;
@@ -19,7 +22,7 @@ export const MainMenuContainer = styled.div`
   @media (max-width: ${media.xs}) {
     width: 100vw;
     max-width: 100vw;
-    position: relative;
+    position: ${ pr => pr.opened ? 'absolute' : 'relative'};
   }
 `;
 
