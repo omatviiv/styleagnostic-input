@@ -23,8 +23,8 @@ import {verywhite, blackb} from './color';
 export const media = {
   xs: '576px',
   sm: '768px',
-  md: '992px',
-    lg: '1200px',
+    md: '992px',
+  lg: '1200px',
 };
 
 export const GlobalStyle = createGlobalStyle`
