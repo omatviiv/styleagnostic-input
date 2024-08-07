@@ -1,0 +1,26 @@
+npm run demo
+DEMO_RESULT=$?
+npm run typecheck
+TYPECHECK_RESULT=$?
+npm run test
+TEST_RESULT=$?
+
+if [ $DEMO_RESULT -ne 0 ]; then
+  echo "npm run demo failed with exit code $DEMO_RESULT. Push aborted."
+  exit 1
+fi
+
+if [ $TYPECHECK_RESULT -ne 0 ]; then
+  echo "npm run typecheck failed with exit code $TYPECHECK_RESULT. Push
+aborted."
+  exit 1
+fi
+
+if [ $TEST_RESULT -ne 0 ]; then
+  echo "npm run test failed with exit code $TEST_RESULT. Push aborted."
+  exit 1
+fi
+
+echo "Pre-push checks passed. Proceeding with push."
+exit 0
+
