@@ -21,7 +21,7 @@ import {verywhite, blackb} from './color';
 // very convenient to use ch CSS unit based breakpoints but still pixel
 // based brackpoints might be useful as well.
 export const media = {
-  xs: '576px',
+    xs: '576px',
   sm: '768px',
   md: '992px',
   lg: '1200px',
