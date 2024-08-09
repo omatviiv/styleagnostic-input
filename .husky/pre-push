@@ -6,7 +6,7 @@ npm run test
 TEST_RESULT=$?
 
 if [ $DEMO_RESULT -ne 0 ]; then
-  echo "npm run demo failed with exit code $DEMO_RESULT. Push aborted."
+  echo "npm run demo:build failed with exit code $DEMO_RESULT. Push aborted."
   exit 1
 fi
 
