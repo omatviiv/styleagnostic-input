@@ -5,7 +5,7 @@ export type InputThemeType = {
 };
 
 const InputTheme: InputThemeType = {
-    Input: styled.input`
+  Input: styled.input`
     font-weight: inherit;
     font-family: inherit;
     background: none;
