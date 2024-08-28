@@ -4,7 +4,7 @@ import {verywhite, blueb, blue, cyan, yellowb} from '../color';
 import {media} from '../';
 
 type MainMenuContainerProps = {
-  opened: boolean;
+  $opened: boolean;
 };
 export const MainMenuContainer = styled.div<MainMenuContainerProps>`
   display: flex;
@@ -22,7 +22,7 @@ export const MainMenuContainer = styled.div<MainMenuContainerProps>`
   @media (max-width: ${media.xs}) {
     width: 100vw;
     max-width: 100vw;
-    position: ${ pr => pr.opened ? 'absolute' : 'relative'};
+    position: ${ pr => pr.$opened ? 'absolute' : 'relative'};
   }
 `;
 
@@ -36,10 +36,10 @@ export const MenuHeader = styled.div`
 `;
 
 type MenuItemsProps = {
-  show?: boolean;
+  $show?: boolean;
 };
 export const MenuItems = styled.div<MenuItemsProps>`
-  display: ${pr => pr.show ? 'flex' : 'none'};
+  display: ${pr => pr.$show ? 'flex' : 'none'};
   padding: 0.5rem 1rem;
   gap: 1rem;
   flex-wrap: wrap;

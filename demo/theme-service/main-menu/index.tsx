@@ -20,13 +20,13 @@ const MainMenu: React.FC<MainMenuProps> = ({
 
   const onMenuClick = () => setOpened(!opened);
 
-  return createPortal(<MainMenuContainer opened={opened}>
+  return createPortal(<MainMenuContainer $opened={opened}>
     <MenuHeader
       onClick={onMenuClick}
     >
       { version && `${version} | `}{mainMenuCtaText} menu
     </MenuHeader>
-    <MenuItems show={opened}>
+    <MenuItems $show={opened}>
       {children}
     </MenuItems>
   </MainMenuContainer>, document.body);
