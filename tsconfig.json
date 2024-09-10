@@ -12,7 +12,9 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "demo": ["demo/*"]
+      "projectRoot": ["projectRoot/*"],
+      "demo": ["demo/*"],
+      "svg": ["svg/*"]
     }
   },
   "include": [
