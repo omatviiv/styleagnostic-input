@@ -27,8 +27,8 @@ const Input: React.FC<{
 
   useEffect(() => { setVal(value); }, [value]);
   useEffect(() => {
-    /* Prevent onChange when mounting */
-    if (mounted) {
+    // Prevent onChange when mounting and value is set through props
+    if (mounted && val !== value) {
       onChangeDebounced(val);
     }
     setMounted(true);

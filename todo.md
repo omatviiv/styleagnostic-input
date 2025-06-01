@@ -18,8 +18,8 @@ versions but its because this project is used as experimental for polishing
 styleagnostic-component template that is why here as an exception
 styleagnostic-input is still in `before intial release` state.
 
-- add react-syntax-highlighter
-- add input component version in the main header of the public demo
++ add react-syntax-highlighter
++ add input component version in the main header of the public demo
 - add cypress and write first test
 - implement disabled state for the input and document in Use section
 - create stickable to either of corners MainMenu component in demo/theme-service
@@ -33,6 +33,9 @@ styleagnostic-input is still in `before intial release` state.
   additional note to README in styleagnostic-component repo.
   So basically demo will be practically empty for newely created component
   and this is fine.
+
+# 0.0.43[44] debounce edge cases fixes
++ fix dbounce edge case when value is set through the props __fix__
 
 # fixes and improvements (post initial release)
 Tasks in this section will follow todo conventions.
