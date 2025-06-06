@@ -1,6 +1,4 @@
-// TODO: once ready use Popup component for MainMenu
-// so that it has proper click outside handling
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {createPortal} from 'react-dom';
 
 import {
@@ -14,19 +12,42 @@ type MainMenuProps = {
 const MainMenu: React.FC<MainMenuProps> = ({
   version = '', children,
 }) => {
-  const [opened, setOpened] = useState<boolean>(false);
+  const popupRef = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const mainMenuCtaText = opened ? 'close' : 'open';
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        popupRef.current
+        && !popupRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
 
-  const onMenuClick = () => setOpened(!opened);
+    if (isOpen) {
+      // Attach event listener only when popup is open
+      document.addEventListener('mousedown', handleClickOutside);
+    }
 
-  return createPortal(<MainMenuContainer $opened={opened}>
+    return () => {
+      // Clean up the event listener when component unmounts or popup closes
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const mainMenuCtaText = isOpen ? 'close' : 'open';
+
+  const onMenuClick = () => setIsOpen(!isOpen);
+
+  return createPortal(<MainMenuContainer $opened={isOpen} ref={popupRef}>
     <MenuHeader
       onClick={onMenuClick}
     >
-      { version && `${version} | `}{mainMenuCtaText} menu
+      <div>{version && `${version} |`}&nbsp;</div>
+      <div>{mainMenuCtaText} menu</div>
     </MenuHeader>
-    <MenuItems $show={opened}>
+    <MenuItems $show={isOpen}>
       {children}
     </MenuItems>
   </MainMenuContainer>, document.body);
