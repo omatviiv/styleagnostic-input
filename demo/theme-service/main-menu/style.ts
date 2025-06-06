@@ -27,6 +27,8 @@ export const MainMenuContainer = styled.div<MainMenuContainerProps>`
 `;
 
 export const MenuHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
   font-weight: bold;
   background-color: ${blue()};
   color: ${yellowb()};

@@ -25,16 +25,6 @@ const Application: React.FC = () => <Container>
       <MenuItem>Elswhere</MenuItem>
       <MenuItem>Elswhere</MenuItem>
       <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
-      <MenuItem>Elswhere</MenuItem>
     </MainMenu>
     <GlobalStyle/>
     <RouterProvider router={router}/>
